@@ -1,0 +1,10 @@
+<div cdkDropList>
+  <div class="example-box" cdkDrag>ITEM WITHOUT SLOT</div>
+  <div class="example-box" cdkDrag>
+    <slot name="item1"></slot>
+  </div>
+  <div class="example-box" cdkDrag>
+    <slot name="item2"></slot>
+    <button>DELETE</button>
+  </div>
+</div>
