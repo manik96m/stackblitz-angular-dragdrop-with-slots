@@ -2,6 +2,10 @@
   <div class="example-box" cdkDrag>ITEM WITHOUT SLOT</div>
   <div class="example-box" cdkDrag>
     <slot name="item1"></slot>
+    <div *cdkDragPreview>
+      TERI
+      <slot name="dragging"></slot>
+    </div>
   </div>
   <div class="example-box" cdkDrag>
     <slot name="item2"></slot>

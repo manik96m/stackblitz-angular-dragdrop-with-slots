@@ -11,8 +11,9 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
   template: `
     <div>
       <app-drag-drop>
-        <div slot="item1">ITEM 1 IN SLOT</div>
+        <div slot="item1" style="z-index: 1001">ITEM 1 IN SLOT- </div>
         <div slot="item2">ITEM 2 IN SLOT</div>
+        <div slot="dragging">ITEM DRAGGED</div>
       </app-drag-drop>
     </div>
   `,
