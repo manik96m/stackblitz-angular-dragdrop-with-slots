@@ -1,7 +1,7 @@
 <div #preview></div>
 
 <div class="cdkdroplist" cdkDropList>
-  <div class="example-box" cdkDrag cdkDragPreviewContainer="parent">
+  <div class="example-box" cdkDrag [cdkDragPreviewContainer]="previewContainer">
     ITEM WITHOUT SLOT
   </div>
   <div class="example-box" cdkDrag [cdkDragPreviewContainer]="previewContainer">

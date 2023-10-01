@@ -17,5 +17,5 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 export class DragDropComponent {
   @ViewChild('preview') previewContainer!: ElementRef;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor() {}
 }
