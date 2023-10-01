@@ -1,13 +1,13 @@
-<div cdkDropList>
-  <div class="example-box" cdkDrag>ITEM WITHOUT SLOT</div>
-  <div class="example-box" cdkDrag>
-    <slot name="item1"></slot>
-    <div *cdkDragPreview>
-      TERI
-      <slot name="dragging"></slot>
-    </div>
+<div #preview></div>
+
+<div class="cdkdroplist" cdkDropList>
+  <div class="example-box" cdkDrag cdkDragPreviewContainer="parent">
+    ITEM WITHOUT SLOT
   </div>
-  <div class="example-box" cdkDrag>
+  <div class="example-box" cdkDrag [cdkDragPreviewContainer]="previewContainer">
+    <slot name="item1"></slot>
+  </div>
+  <div class="example-box" cdkDrag [cdkDragPreviewContainer]="previewContainer">
     <slot name="item2"></slot>
     <button>DELETE</button>
   </div>

@@ -1,4 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {
+  Component,
+  ViewEncapsulation,
+  ElementRef,
+  ViewChild,
+} from '@angular/core';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @Component({
@@ -9,8 +14,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
   standalone: true,
   encapsulation: ViewEncapsulation.ShadowDom,
 })
-export class DragDropComponent implements OnInit {
-  constructor() {}
+export class DragDropComponent {
+  @ViewChild('preview') previewContainer!: ElementRef;
 
-  ngOnInit() {}
+  constructor(private elementRef: ElementRef) {}
 }
